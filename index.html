@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Root://Search</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+margin:0;
+background:black;
+font-family:'Audiowide', cursive;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+flex-direction:column;
+
+overflow:hidden;
+
+}
+
+.bg{
+
+position:absolute;
+
+top:35%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:420px;
+
+opacity:.85;
+
+animation:fade 6s infinite;
+
+}
+
+.container{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+z-index:1;
+
+}
+
+form{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+}
+
+h1{
+
+color:black;
+
+font-size:42px;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+text-shadow:
+0 0 8px #777,
+0 0 20px #aaa,
+0 0 40px #fff,
+0 0 80px #fff;
+
+}
+
+input{
+
+width:260px;
+
+background:black;
+
+border:1px solid #333;
+
+padding:12px;
+
+color:#eee;
+
+text-align:center;
+
+font-family:'Audiowide', cursive;
+
+box-shadow:
+0 0 10px #777,
+0 0 25px #bbb,
+0 0 45px #fff;
+
+}
+
+button{
+
+margin-top:15px;
+
+background:black;
+
+border:1px solid #333;
+
+padding:12px 28px;
+
+color:#eee;
+
+cursor:pointer;
+
+font-family:'Audiowide', cursive;
+
+box-shadow:
+0 0 10px #777,
+0 0 25px #bbb,
+0 0 45px #fff;
+
+}
+
+footer{
+
+position:fixed;
+
+bottom:8px;
+
+width:100%;
+
+text-align:center;
+
+font-size:10px;
+
+color:#444;
+
+letter-spacing:1px;
+
+}
+
+@keyframes fade{
+
+0%{opacity:.2}
+50%{opacity:.85}
+100%{opacity:.2}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img src="hacker.png" class="bg">
+
+<div class="container">
+
+<h1>Root://Search</h1>
+
+<form action="https://duckduckgo.com/" method="GET">
+
+<input name="q" placeholder="search..." required>
+
+<button type="submit">ENTER</button>
+
+</form>
+
+</div>
+
+<footer>
+created by SociallyEncrypted 2026
+</footer>
+
+</body>
+
+</html>
