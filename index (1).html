@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>root://search</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="nav">
+
+<a href="index.html" class="active">search</a>
+
+<a href="downloads.html">downloads</a>
+
+</div>
+
+
+
+<div class="container">
+
+
+<h1>root://search</h1>
+
+
+<input
+type="text"
+placeholder="search the web..."
+id="searchBox"
+>
+
+
+<br>
+
+
+<button onclick="search()">
+
+search
+
+</button>
+
+
+
+<p class="credit">
+
+Created by SociallyEncrypted 2026
+
+</p>
+
+
+</div>
+
+
+
+<script>
+
+function search(){
+
+let query = document.getElementById("searchBox").value;
+
+window.location.href =
+"https://duckduckgo.com/?q=" + query;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
